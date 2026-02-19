@@ -1,6 +1,6 @@
 <?php
 
-define('EMAIL_NAME', '(.*)');
+define('EMAIL_NAME', '(?!\.)(?!.*\.\.)[A-Za-z0-9._%+-]+(?<!\.)'); // '(.*)');
 define('MAILBOX', '\s*([a-z][a-z0-9\'-.]*)\s*');
 define('HOST', '([a-z][a-z0-9-]*\.)*([a-z][a-z0-9-]+\.[a-z]+)');
 
