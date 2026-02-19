@@ -90,7 +90,7 @@ class CryptoService
 
         try {
             return $key->verify($data, base64_decode($signature));
-        } catch (Exception $e) {
+        } catch (\Throwable $e) {
             return null;
         }
     }
