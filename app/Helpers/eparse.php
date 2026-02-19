@@ -6,7 +6,7 @@ define('HOST', '([a-z][a-z0-9-]*\.)*([a-z][a-z0-9-]+\.[a-z]+)');
 
 /**
  * Parse an RFC 5322 email address string into its components.
- * The email_name pattern ensure email cannot star or end with a dot or contain consecutive dots.
+ * The email_name pattern ensure email cannot star or end with a dot or contain two consecutive dots.
  * Handles both bare addresses (user@example.com) and display-name
  * format (Display Name <user@example.com>).
  *
